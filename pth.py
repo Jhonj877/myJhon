@@ -82,3 +82,15 @@ print("el indice del numero 5 es", lista.index(5))
 
 print(lista) 
 
+nombres = []
+notas = []
+
+for i in range(5):
+    nombre = input(f"Ingrese el nombre del estudiante #{i+1}: ")
+    nota = float(input(f"Ingrese la nota de {nombre}: "))
+    nombres.append(nombre)
+    notas.append(nota)
+
+for i in range(len(nombres)):
+    estado = "Pasa" if notas[i] > 3 else "No pasa"
+    print(f"{nombres[i]} - Nota: {notas[i]} - {estado}")

@@ -1,0 +1,114 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frutería Fresca - Comercio Electrónico de Frutas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container header-container">
+            <div class="logo">
+                <div class="logo-icon">🍎</div>
+                <div class="logo-text">Frutería Fresca</div>
+            </div>
+            <div class="search-bar">
+                <span class="search-icon">🔍</span>
+                <input type="text" id="searchInput" placeholder="Buscar frutas...">
+            </div>
+            <button class="cart-btn" id="cartBtn">
+                🛒 Carrito (<span id="cartCount">0</span>)
+            </button>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h1>Frutas Frescas Directo del Campo</h1>
+            <p>Descubre nuestra selección de frutas frescas, cosechadas diariamente para garantizar la máxima calidad y sabor.</p>
+            <button class="hero-btn">Explorar Productos</button>
+        </div>
+    </section>
+
+    <!-- Categories -->
+    <section class="categories">
+        <div class="container categories-container">
+            <button class="category-btn active" data-category="all">Todos</button>
+            <button class="category-btn" data-category="frutas">Frutas</button>
+            <button class="category-btn" data-category="citricos">Cítricos</button>
+            <button class="category-btn" data-category="bayas">Bayas</button>
+            <button class="category-btn" data-category="tropicales">Tropicales</button>
+        </div>
+    </section>
+
+    <!-- Products -->
+    <section class="products">
+        <div class="container">
+            <div class="products-grid" id="productsGrid">
+                <!-- Products will be inserted here by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Cart Modal -->
+    <div class="overlay" id="overlay"></div>
+    <div class="cart-modal" id="cartModal">
+        <div class="cart-header">
+            <h2 class="cart-title">Tu Carrito</h2>
+            <button class="close-cart" id="closeCartBtn">✕</button>
+        </div>
+        <div class="cart-items" id="cartItems">
+            <!-- Cart items will be inserted here by JavaScript -->
+        </div>
+        <div class="cart-total">
+            <span>Total:</span>
+            <span id="cartTotal">$0.00</span>
+        </div>
+        <button class="checkout-btn">Proceder al Pago</button>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-column">
+                    <h3>Frutería Fresca</h3>
+                    <p>Frutas frescas directo del campo a tu mesa. Calidad garantizada y servicio excepcional.</p>
+                </div>
+                <div class="footer-column">
+                    <h3>Enlaces Rápidos</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Inicio</a></li>
+                        <li><a href="#">Productos</a></li>
+                        <li><a href="#">Sobre Nosotros</a></li>
+                        <li><a href="#">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Categorías</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Frutas</a></li>
+                        <li><a href="#">Cítricos</a></li>
+                        <li><a href="#">Bayas</a></li>
+                        <li><a href="#">Tropicales</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column footer-contact">
+                    <h3>Contacto</h3>
+                    <p>📞 +1 (555) 123-4567</p>
+                    <p>✉️ info@fruteriafresca.com</p>
+                    <p>📍 Calle Frutas 123, Ciudad</p>
+                </div>
+            </div>
+            <div class="copyright">
+                &copy; 2024 Frutería Fresca. Todos los derechos reservados.
+            </div>
+        </div>
+    </footer>
+    <script src="utils.js"></script>
+</body>
+</html>
